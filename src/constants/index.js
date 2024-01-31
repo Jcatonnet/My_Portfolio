@@ -17,9 +17,9 @@ import {
   EYLogo,
   cubynLogo,
   simundiaLogo,
-  carrent,
-  jobit,
-  tripguide,
+  safedate,
+  tshirt,
+  saferideher,
   threejs,
   omnipresentLogo,
   postgresql,
@@ -215,9 +215,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "SafeDate",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Mobile app IOS/Android helping women to share live info geolocation with a friend to go dating safely.",
     tags: [
       {
         name: "react",
@@ -232,13 +232,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: safedate,
+    source_code_link: "https://github.com/Jcatonnet/SafeDate",
   },
   {
-    name: "Job IT",
+    name: "Custom Tshirt",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application powered by AI that enables users to generate customed tshirts and view it through 3D models.",
     tags: [
       {
         name: "react",
@@ -253,13 +253,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: tshirt,
+    source_code_link: "https://github.com/Jcatonnet/tshirtAI",
   },
   {
-    name: "Trip Guide",
+    name: "SafeRideHer",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A platform to reference women-only extreme sports clubs to help women pursue their adrenaline dreams in a safe environment.",
     tags: [
       {
         name: "nextjs",
@@ -274,8 +274,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: saferideher,
+    source_code_link: "https://github.com/Jcatonnet/SafeRideHer",
   },
 ];
 

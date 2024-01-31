@@ -3,11 +3,14 @@ import { technologies } from "../constants";
 import { motion } from "framer-motion";
 import { zoomIn } from "../utils/motion";
 import { styles } from "../styles";
+import { textVariant } from "../utils/motion";
 
 const Tech = () => {
   return (
     <>
-      <p className={styles.sectionSubText}>My technical expertise</p>
+      <motion.div variants={textVariant}>
+        <p className={styles.sectionSubText}>My technical expertise</p>
+      </motion.div>
       <div className="mt-10 flex flex-row flex-wrap justify-center gap-10">
         {technologies.map((technology, index) => (
           <motion.div
@@ -24,4 +27,4 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "Tech");
+export default SectionWrapper(Tech, "");

@@ -30,9 +30,9 @@ import simundiaLogo from "./company/SimundiaLogo.png";
 import omnipresentLogo from "./company/omnipresentLogo.png";
 import cubynLogo from "./company/CubynLogo.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import safedate from "./safedate.png";
+import tshirt from "./tshirt.png";
+import saferideher from "./saferideher.png";
 
 export {
   logo,
@@ -60,9 +60,9 @@ export {
   simundiaLogo,
   omnipresentLogo,
   cubynLogo,
-  carrent,
-  jobit,
-  tripguide,
+  safedate,
+  tshirt,
+  saferideher,
   postgresql,
   aws,
   reactNative,
