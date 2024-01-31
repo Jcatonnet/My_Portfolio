@@ -50,7 +50,7 @@ const ProjectCard = ({
               <img src={tag.icon} className="w6 h-6 object-contain" />
               <p
                 key={tag.name}
-                className={`mt-2 text-sm text-secondary ${tag.color}`}
+                className={`mt-2 text-sm text-secondary ${tag.name}`}
               >
                 {tag.name}
               </p>
