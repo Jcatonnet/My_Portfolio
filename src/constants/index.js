@@ -26,6 +26,7 @@ import {
   aws,
   reactNative,
   jest,
+  firebase,
 } from "../assets";
 
 export const navLinks = [
@@ -111,6 +112,10 @@ const technologies = [
   {
     name: "Postgresql",
     icon: postgresql,
+  },
+  {
+    name: "firebase",
+    icon: firebase,
   },
   {
     name: "AWS",
@@ -220,16 +225,20 @@ const projects = [
       "Mobile app IOS/Android helping women to share live info geolocation with a friend to go dating safely.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "react native",
+        icon: reactNative,
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "redux",
+        icon: redux,
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "typescript",
+        icon: typescript,
+      },
+      {
+        name: "firebase",
+        icon: firebase,
       },
     ],
     image: safedate,
@@ -242,15 +251,15 @@ const projects = [
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        icon: reactjs,
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: "tailwind",
+        icon: tailwind,
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "openAI API",
+        icon: openAI,
       },
     ],
     image: tshirt,
@@ -262,16 +271,20 @@ const projects = [
       "A platform to reference women-only extreme sports clubs to help women pursue their adrenaline dreams in a safe environment.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "react",
+        icon: reactjs,
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "node.js",
+        icon: nodejs,
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "mongodb",
+        icon: mongodb,
+      },
+      {
+        name: "threejs",
+        icon: threejs,
       },
     ],
     image: saferideher,

@@ -33,6 +33,7 @@ import cubynLogo from "./company/CubynLogo.png";
 import safedate from "./safedate.png";
 import tshirt from "./tshirt.png";
 import saferideher from "./saferideher.png";
+import firebase from "./tech/firebase.png";
 
 export {
   logo,
@@ -67,4 +68,5 @@ export {
   aws,
   reactNative,
   jest,
+  firebase,
 };

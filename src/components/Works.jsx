@@ -5,7 +5,6 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { projects } from "../constants";
-import { Tilt } from "react-tilt";
 
 const ProjectCard = ({
   index,
@@ -41,6 +40,22 @@ const ProjectCard = ({
         <div className="mt-5">
           <h3 className="textx-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        </div>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <div
+              key={tag.name}
+              className="flex flex-col items-center justify-center"
+            >
+              <img src={tag.icon} className="w6 h-6 object-contain" />
+              <p
+                key={tag.name}
+                className={`mt-2 text-sm text-secondary ${tag.color}`}
+              >
+                {tag.name}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </motion.div>
