@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -11,7 +12,7 @@ const ServiceCard = ({ index, title, icon }) => {
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
-        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] max-w-[250px] flex justify-evenly items-center flex-col">
+        <div className="bg-tertiary rounded-[20px] py-5 px-12 sm:px-4 sm:py-3 min-h-[280px] max-w-[250px] min-w-[250px] sm:w-full flex justify-evenly items-center flex-col">
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}
@@ -43,7 +44,7 @@ const About = () => {
         projects with a comprehensive understanding, ensuring technical
         excellence aligned with business objectives.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => {
           return <ServiceCard key={service.title} index={index} {...service} />;
         })}
@@ -52,4 +53,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");
