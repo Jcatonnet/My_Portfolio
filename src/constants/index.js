@@ -13,7 +13,7 @@ import {
   mongodb,
   git,
   figma,
-  docker,
+  openAI,
   EYLogo,
   cubynLogo,
   simundiaLogo,
@@ -22,6 +22,10 @@ import {
   tripguide,
   threejs,
   omnipresentLogo,
+  postgresql,
+  aws,
+  reactNative,
+  jest,
 } from "../assets";
 
 export const navLinks = [
@@ -60,6 +64,14 @@ const services = [
 
 const technologies = [
   {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "React Native",
+    icon: reactNative,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -76,8 +88,8 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Node JS",
+    icon: nodejs,
   },
   {
     name: "Redux Toolkit",
@@ -88,12 +100,21 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Jest",
+    icon: jest,
   },
+
   {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "Postgresql",
+    icon: postgresql,
+  },
+  {
+    name: "AWS",
+    icon: aws,
   },
   {
     name: "Three JS",
@@ -108,8 +129,8 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "openAI",
+    icon: openAI,
   },
 ];
 
