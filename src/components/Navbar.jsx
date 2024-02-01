@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -27,20 +27,15 @@ const Navbar = () => {
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((link) => (
+          {navLinks.map((nav) => (
             <li
-              key={link.id}
-              className="hover:text-white text-[18px] font-medium cursor-pointer"
+              key={nav.id}
+              className={`${
+                active === nav.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(nav.title)}
             >
-              <Link
-                to={link.id}
-                className={`${
-                  active === link.title ? "text-white" : "text-secondary"
-                }`}
-                onClick={() => setActive(link.title)}
-              >
-                {link.title}
-              </Link>
+              <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>

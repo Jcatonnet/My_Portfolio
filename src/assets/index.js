@@ -34,6 +34,10 @@ import safedate from "./safedate.png";
 import tshirt from "./tshirt.png";
 import saferideher from "./saferideher.png";
 import firebase from "./tech/firebase.png";
+import profilePicture from "./photo_link.jpeg";
+import linkedinLogo from "./linkedinLogo.png";
+import phoneLogo from "./phoneLogo.png";
+import mailLogo from "./mailLogo.png";
 
 export {
   logo,
@@ -69,4 +73,8 @@ export {
   reactNative,
   jest,
   firebase,
+  profilePicture,
+  linkedinLogo,
+  phoneLogo,
+  mailLogo,
 };

@@ -27,6 +27,7 @@ import {
   reactNative,
   jest,
   firebase,
+  profilePicture,
 } from "../assets";
 
 export const navLinks = [
@@ -265,4 +266,14 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+const profile = {
+  name: "Julien",
+  lastName: "Catonnet",
+  email: "julien.catonnet@essec.edu",
+  phone: "+33 6 77 68 80 27",
+  image: profilePicture,
+  linkedin_link: "https://www.linkedin.com/in/julien-catonnet-18624162/",
+  github_link: "https://github.com/Jcatonnet",
+};
+
+export { services, technologies, experiences, projects, profile };
