@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+// import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import ProfileCard from "./ProfileCard";
@@ -69,11 +69,11 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden `}
+      className="xl:mt-12 flex xl:flex-row flex-col-reverse justify-between gap-10 overflow-hidden"
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-grow lg:flex-grow-0 lg:flex-basis-[75%] bg-black-100 p-8 rounded-2xl lg:mr-10"
+        className="flex-grow lg:flex-basis-[60%] bg-black-100 p-8 rounded-2xl lg:mr-10"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -128,7 +128,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="flex-grow lg:flex-1 lg:h-auto md:h-[550px] h-[350px] mb-20 lg:mb-0"
+        className="flex-none lg:flex-basis-[35%] lg:h-auto md:h-[550px] h-[350px] mb-20 lg:mb-0"
       >
         <ProfileCard {...profile} />
         {/* <EarthCanvas /> */}
