@@ -11,13 +11,21 @@ const ProfileCard = ({
 }) => {
   return (
     <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-      <div className="relative w-full h-[230px]">
+      <div className="relative flex flex-col justify-center items-center w-full h-full">
         <img
           src={image}
           alt="project_image"
-          className="w-full h-full object-fit: contain rounded-[50%]"
+          className="w-[80%] h-[90%] object-fit: contain rounded-[50%]"
         />
+        <a
+          href="/Resume_Julien_Catonnet.pdf"
+          download
+          className="mt-4 mb-4 bg-secondary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+        >
+          Download my resume
+        </a>
       </div>
+
       <div className="mt-5">
         <h3 className="textx-white font-bold text-[24px] ">
           {name} {lastName}

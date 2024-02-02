@@ -128,9 +128,10 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="flex-none lg:flex-basis-[35%] lg:h-auto md:h-[550px] h-[350px] mb-20 lg:mb-0"
+        className="flex-none lg:flex-basis-[35%] lg:h-auto md:h-[550px] h-[350px] mb-40  lg:mb-0"
       >
         <ProfileCard {...profile} />
+
         {/* <EarthCanvas /> */}
       </motion.div>
     </div>
