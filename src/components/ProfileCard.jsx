@@ -39,10 +39,10 @@ const ProfileCard = ({
           <p className="text-secondary text-[14px] ml-2">{phone}</p>
         </div>
       </div>
-      <div className="mt-4 flex flex-wrap justify-center gap-10">
+      <div className="mt-4 mb-4 flex flex-wrap justify-center gap-10">
         <div
           onClick={() => window.open(github_link, "_blank")}
-          className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-110"
+          className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 "
         >
           <img
             src={github}

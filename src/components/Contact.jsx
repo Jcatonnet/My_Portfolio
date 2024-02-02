@@ -69,7 +69,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="xl:mt-12 flex xl:flex-row flex-col-reverse justify-between gap-10 overflow-hidden"
+      className="xl:mt-12 flex xl:flex-row flex-col justify-between gap-10 overflow-hidden"
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -128,7 +128,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="flex-none lg:flex-basis-[35%] lg:h-auto md:h-[550px] h-[350px] mb-40  lg:mb-0"
+        className="flex-none lg:flex-basis-[35%] lg:h-auto md:h-[550px] min-h-[350px] mb-40  lg:mb-0"
       >
         <ProfileCard {...profile} />
 
